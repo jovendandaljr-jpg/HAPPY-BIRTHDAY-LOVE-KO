@@ -1,0 +1,93 @@
+@media(max-width:850px){.section{padding:85px 6vw}.topbar{padding:0 5vw}.menu-toggle{display:block;order:3}.sound-button{margin-left:auto;margin-right:18px}nav{display:none;position:absolute;top:72px;left:0;right:0;padding:20px 6vw 26px;background:#fff9f1f5;flex-direction:column;gap:18px;border-bottom:1px solid #d6b77933}nav.open{display:flex}nav a{font-size:.8rem}.intro-grid{gap:7vw}.portrait-frame{height:460px}.reason-grid{grid-template-columns:repeat(4,1fr)}.letter-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){body{font-size:14px}.section{padding:76px 22px}.section-kicker{margin-bottom:30px}.hero{min-height:650px}.hero h1{font-size:clamp(3.3rem,16vw,5rem)}.hero-count{font-size:16rem;width:24rem;height:24rem;right:-14rem}.hero-content{padding-top:90px}.intro-grid{grid-template-columns:1fr;gap:42px}.portrait-frame{height:430px;max-width:360px;width:100%;margin:auto}.intro-copy h2{font-size:2.8rem}.profile-cards{grid-template-columns:repeat(2,1fr);gap:10px}.profile-card{padding:17px;min-height:155px}.gallery-head{display:block}.gallery-head .muted{margin-top:14px}.masonry{columns:2 140px;column-gap:10px}.polaroid{padding:7px 7px 12px;margin-bottom:10px}.polaroid figcaption{font-size:.95rem}.reason-grid{grid-template-columns:repeat(3,1fr);gap:8px}.reason-card{height:138px}.reason-back{font-size:.95rem;padding:9px}.chapter{min-height:630px}.chapter-number{font-size:9rem}.chapter h2{font-size:2.2rem}.chapter-wishes{gap:7px;flex-wrap:wrap}.chapter-wishes span{font-size:1rem}.letter-grid{gap:9px}.letter-card{padding:19px 10px;min-height:155px}.letter-card h3{font-size:1rem}.gift-row{gap:12px}.giftbox{transform:scale(.84);margin:0 -8px}.giftbox:hover{transform:scale(.84) translateY(-6px)}.jar-layout{grid-template-columns:1fr;gap:18px;text-align:center}.jar-layout .body-copy{margin-left:auto;margin-right:auto}.jar{transform:scale(.82);margin:-12px auto}.countdown-grid{gap:7px}.time-unit{width:76px;padding:10px 4px}.time-unit strong{font-size:1.7rem}.time-unit span{font-size:.5rem}.finale h2{font-size:clamp(2.8rem,13vw,4.5rem)}.modal-arrow.prev{left:-38px}.modal-arrow.next{right:-38px}.modal-arrow{width:30px;height:30px;font-size:1.7rem}.letter-modal{padding:55px 25px}.letter-paper{font-size:.98rem}.topbar{height:64px}nav{top:64px}.scroll-cue{margin-top:38px}}
+/* Additional small-screen polish */
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%}
+button,a{-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(max-width:850px){
+  .topbar{height:64px;padding-inline:18px;gap:10px}
+  nav{top:64px;max-height:calc(100dvh - 64px);overflow:auto;padding:12px 22px 22px}
+  nav a{display:block;padding:9px 0;min-height:42px}
+  .menu-toggle,.sound-button{min-width:44px;min-height:44px;display:grid;place-items:center}
+  .sound-button{margin:0 4px 0 auto}
+}
+@media(max-width:600px){
+  html{scroll-padding-top:66px}
+  .section{padding:70px 20px}
+  .section-kicker{font-size:.58rem;letter-spacing:.15em;margin-bottom:26px}
+  h2{font-size:clamp(2rem,9vw,2.75rem)}
+  .center-heading{margin-bottom:34px}
+  .center-heading .script{font-size:1.8rem}
+  .topbar{padding-inline:14px}
+  .brand{font-size:.7rem;letter-spacing:.08em}
+  .sound-button span{display:none}
+  .hero{min-height:620px;height:100svh}
+  .hero-content{padding:78px 20px 36px}
+  .hero .eyebrow{font-size:.56rem;letter-spacing:.15em}
+  .hero-script{font-size:2rem}
+  .hero h1{font-size:clamp(3rem,15vw,4.6rem)}
+  .hero-sub{font-size:1.05rem;max-width:290px;margin-inline:auto}
+  .hero .button{min-height:48px;padding:14px 18px}
+  .scroll-cue{margin-top:32px}
+  .intro-grid{grid-template-columns:minmax(0,1fr);gap:32px}
+  .portrait-frame{height:min(112vw,430px);min-height:300px;max-width:380px}
+  .intro-copy{min-width:0}
+  .intro-copy h2{font-size:clamp(2.35rem,11vw,3.1rem)}
+  .intro-copy .lede{font-size:1.18rem}
+  .body-copy{font-size:.92rem}
+  .childhood-strip{gap:8px;max-width:100%}
+  .childhood-thumb{padding:5px}
+  .profile-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .profile-card{min-width:0;padding:15px;overflow-wrap:anywhere}
+  .gallery-head{display:block}
+  .gallery-head .muted{font-size:.82rem}
+  .masonry{columns:2;column-gap:8px}
+  .polaroid{padding:6px 6px 10px;margin-bottom:9px}
+  .polaroid figcaption{font-size:.88rem;line-height:1.3}
+  .reason-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .reason-card{min-width:0;min-height:132px;padding:16px 13px;overflow-wrap:anywhere}
+  .reason-message{font-size:.96rem}
+  .timeline-item{padding-left:48px;padding-bottom:34px}
+  .chapter{min-height:570px}
+  .chapter-number{font-size:8rem}
+  .chapter h2{font-size:2rem}
+  .chapter-wishes{gap:7px}
+  .chapter-wishes span{padding:7px 10px}
+  .letter-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .letter-card{min-width:0;padding:16px 9px;overflow-wrap:anywhere}
+  .gift-row{gap:0}
+  .giftbox{flex:0 1 105px;max-width:33%;transform:scale(.78);margin-inline:-8px}
+  .giftbox:hover{transform:scale(.78) translateY(-5px)}
+  .jar-layout{grid-template-columns:minmax(0,1fr);gap:12px}
+  .countdown-grid{gap:6px}
+  .time-unit{width:min(22vw,76px);min-width:58px}
+  .finale{min-height:780px;padding:80px 22px}
+  .finale-content{max-width:100%}
+  .finale h2{font-size:clamp(2.6rem,12vw,4.3rem)}
+  .modal{max-width:94vw}
+  .modal figure{padding:8px 8px 6px}
+  .modal figure img{max-width:calc(94vw - 16px);max-height:75dvh}
+  .modal-arrow.prev{left:6px}
+  .modal-arrow.next{right:6px}
+  .modal-close{right:-6px;top:-14px}
+  .letter-modal{width:94vw;padding:52px 20px 28px;max-height:88dvh}
+  .to-top{right:12px;bottom:12px;width:44px;height:44px}
+}
+@media(max-width:380px){
+  .section{padding-inline:16px}
+  .portrait-frame{min-height:280px}
+  .profile-cards,.letter-grid{grid-template-columns:1fr 1fr}
+  .profile-card{padding:12px;min-height:145px}
+  .reason-grid{grid-template-columns:1fr 1fr}
+  .reason-card{min-height:125px;padding:13px 10px}
+  .reason-message{font-size:.9rem}
+  .giftbox{transform:scale(.7);margin-inline:-14px}
+  .giftbox:hover{transform:scale(.7) translateY(-4px)}
+  .time-unit{min-width:53px;padding:9px 3px}
+  .time-unit strong{font-size:1.45rem}
+}
+@media(orientation:landscape) and (max-height:500px){
+  .hero{min-height:520px}
+  .hero-content{padding-top:72px}
+  .scroll-cue{margin-top:20px}
+}
